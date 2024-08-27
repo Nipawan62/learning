@@ -5,64 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         a{
-            color: white;
-            margin: 20px;
-            height: 70px;
-            background-color: royalblue;
-            font-size: xx-large;
-            border-radius: 5px;
-            line-height: 70px;
-            
+        body {
+            background-color: #f4f4f9; /* สีพื้นหลังของ body */
+            font-family: Arial, sans-serif; /* ฟอนต์ที่อ่านง่าย */
+            margin: 0;
+            padding: 0;
         }
-        button{
-            color: white;
-            margin: 20px;
-            height: 70px;
-            background-color: royalblue;
-            font-size: xx-large;
-            border-radius: 5px;
-            line-height: 70px;
-            border: 1px solid #ddd;
-            
-        }
-        body{
-            background-color:whitesmoke;
-        }
-        hr{
-        
-            height: 5px;
-            background-color:black;
-        }   
-         table{
-            width: 80%;
-            margin-top: 30px;
-            margin-left: auto;
-            margin-right:  auto;
 
+        a {
+            text-decoration: none; /* ลบขีดเส้นใต้ของลิงก์ */
+            color: white;
+            display: block; /* ทำให้ลิงก์เต็มพื้นที่ของปุ่ม */
+            height: 100%; /* ความสูงเต็มของปุ่ม */
+            line-height: 70px; /* จัดแนวข้อความในแนวตั้ง */
+        }
+
+        button {
+            color: white;
+            margin: 20px;
+            height: 70px;
+            background-color: royalblue;
+            font-size: xx-large;
+            border-radius: 5px;
+            border: none; /* ลบขอบของปุ่ม */
+            line-height: 70px;
+            cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+            display: inline-block; /* ทำให้ปุ่มอยู่ในบรรทัดเดียวกัน */
+            text-align: center; /* จัดข้อความให้อยู่กลาง */
+            width: 200px; /* ความกว้างของปุ่ม */
+        }
+
+        hr {
+            border: 0;
+            height: 5px;
+            background-color: black;
+            margin: 20px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto; /* จัดตำแหน่งตารางให้อยู่กลาง */
             border-collapse: collapse;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            
-         }
-         th {
+            background-color: white; /* สีพื้นหลังของตาราง */
+        }
+
+        th {
             background-color: #4CAF50;
             color: white;
             font-weight: bold;
-            border:1px solid #ddd;
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
         }
+
         td {
             border: 1px solid #ddd;
             padding: 12px;
             text-align: center;
-
         }
-            
     </style>
 </head>
 <body>
     <button><a href="http://127.0.0.1:3000/quiz9/home.html">HOME</a></button>
     <button><a href="http://127.0.0.1:3000/quiz9/product.html">PRODUCT</a></button>
-    <br>
     <hr>
     <table>
         <tr>
