@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table with 3 Headers and 3 Rows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>
+                
+                หัว1
+            </th>
+            <th>
+                หัว2
+            </th>
+            <th>
+                หัว3
+            </th>
+            <th>หัว4
+
+            </th>
+
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td><button>3</button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>
+                <input type="radio" name="3" id="3">3.1
+                <input type="radio" name="3" id="3">3.2
+
+            </td>
+            <td></td>
+
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>
+                <input type="checkbox" name="4" id="4">4.1
+                <input type="checkbox" name="4" id="4">4.2
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td><input type="datetime-local" name="" id=""></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f4f4f9; /* เปลี่ยนสีพื้นหลังให้ดูสะอาดตา */
+            font-family: Arial, sans-serif; /* ฟอนต์ที่อ่านง่าย */
+            margin: 0;
+            padding: 0;
+            text-align: left; /* จัดข้อความทั้งหมดให้ชิดซ้าย */
+        }
+
+        button {
+            color: white;
+            margin: 10px; /* ลด margin เพื่อให้ปุ่มอยู่ใกล้กัน */
+            height: 70px;
+            background-color: royalblue;
+            font-size: xx-large;
+            border-radius: 5px;
+            border: none; /* ลบขอบของปุ่ม */
+            line-height: 70px;
+            width: 200px; /* กำหนดความกว้างของปุ่ม */
+            cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+            text-align: center; /* จัดข้อความให้ตรงกลาง */
+            display: inline-block; /* ให้ปุ่มอยู่ในบรรทัดเดียวกัน */
+        }
+
+        a {
+            color: white;
+            text-decoration: none; /* ลบขีดเส้นใต้ของลิงก์ */
+            display: block; /* ทำให้ลิงก์เต็มพื้นที่ของปุ่ม */
+            height: 100%; /* ความสูงเต็มของปุ่ม */
+            line-height: 70px; /* จัดแนวข้อความในแนวตั้ง */
+        }
+
+        hr {
+            border: 0;
+            height: 5px;
+            background-color: black;
+            margin: 20px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+        }
+
+        .button-container {
+            margin: 20px; /* เพิ่ม margin รอบ ๆ คอนเทนเนอร์ของปุ่ม */
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center; /* จัดตำแหน่งการ์ดให้อยู่กลางในแนวนอน */
+            align-items: center; /* จัดตำแหน่งการ์ดให้อยู่กลางในแนวตั้ง */
+            gap: 20px; /* ระยะห่างระหว่างการ์ด */
+            margin: 20px; /* เพิ่ม margin รอบ ๆ คอนเทนเนอร์ของการ์ด */
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 200px; /* ความกว้างของการ์ด */
+        }
+
+        .card b {
+            font-size: large;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button><a href="http://127.0.0.1:3000/quiz9/home.html">HOME</a></button>
+        <button><a href="http://127.0.0.1:3000/quiz9/product.html">PRODUCT</a></button>
+    </div>
+    <hr>
+    <div class="card-container">
+        <div class="card">
+            <b>Active User : 10</b>
+        </div>
+        <div class="card">
+            <b>Total User : 100</b>
+        </div>
+    </div>
+</body>
+</html>

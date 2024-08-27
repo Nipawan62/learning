@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* Header */
+.header {
+    background-color: #3E54D3; /* สี */
+    color: #fff; /* สีข้อความขาว */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงาบางเบา */
+    font-size: 24px;
+}
+/* Sidebar */
+.sidebar {
+    background-color: #4F80E2; /* สี */
+    color: #fff; /* สีข้อความขาว */
+    width: 30%;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* เงาข้าง */
+}
+/* Container */
+.container {
+    background-color: #15CDCA; /* สี */
+    width: 70%;
+    height: 600px;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* เงาข้าง */
+}
+/* Footer */
+.footer {
+    background-color: #4EF086; /* สี */
+    color: #fff; /* สีข้อความขาว */
+    width: 100%;
+    height: 80px;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* เงาเหนือ */
+    font-size: 18px;
+}

@@ -1,0 +1,31 @@
+.divred {
+    width: 40%;
+    background-color: red;
+    height: 300px;
+    margin: 5%;
+    float: left;
+    
+   
+}
+.divblue {
+    width: 40%;
+    background-color: rgb(13, 35, 231);
+    height: 300px;
+    margin: 5%;
+   float: left;
+    
+}
+.divblack{
+    width: 40%;
+    background-color: rgb(10, 10, 10);
+    height: 300px;
+    margin: 5%;
+    float: right;
+}
+.divgreen{
+    width: 40%;
+    background-color: green;
+    height: 300px;
+    margin: 5%;
+    float: right;
+}

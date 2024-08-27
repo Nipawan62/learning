@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* จัดกลางในแนวนอน */
+            align-items: center; /* จัดกลางในแนวตั้ง */
+            background-color: #f0f0f0; /* สีพื้นหลังเพื่อให้ฟอร์มดูเด่น */
+        }
+        .centered {
+            background: #fff; /* สีพื้นหลังของฟอร์ม */
+            padding: 20px; /* ช่องว่างรอบๆ ฟอร์ม */
+            border-radius: 8px; /* มุมโค้งของฟอร์ม */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เงาของฟอร์ม */
+            text-align: center; /* จัดกลางข้อความในฟอร์ม */
+            width: 300px; /* กำหนดความกว้างของฟอร์ม */
+        }
+        .form-group {
+            margin-bottom: 15px; /* ช่องว่างระหว่างกลุ่มฟิลด์ */
+            text-align: left; /* จัดข้อความและช่องกรอกข้อมูลให้จัดระเบียบทางซ้าย */
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="email"],
+        input[type="password"],
+        button,
+        a {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* รวม padding และ border ในการคำนวณความกว้าง */
+            display: block;
+            text-align: center;
+            margin: 8px 0;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        button {
+            background-color: #007bff; /* สีพื้นหลังของปุ่ม */
+            color: #fff; /* สีข้อความของปุ่ม */
+            border: none; /* ลบกรอบของปุ่ม */
+        }
+        button:hover {
+            background-color: #0056b3; /* สีพื้นหลังเมื่อวางเมาส์อยู่บนปุ่ม */
+        }
+        a {
+            background-color: #e0e0e0; /* สีพื้นหลังของลิงก์ */
+            color: #007bff; /* สีข้อความของลิงก์ */
+            border: 1px solid #ddd; /* กรอบของลิงก์ */
+        }
+        a:hover {
+            background-color: #d0d0d0; /* สีพื้นหลังเมื่อวางเมาส์อยู่บนลิงก์ */
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <h1><u>Admin V1.0</u></h1>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <div class="form-group">
+            <button> <label for="">login</label></button>
+            <a href="http://" target="_blank" rel="noopener noreferrer">register</a>
+        </div>
+        
+    </div>
+</body>
+</html>
