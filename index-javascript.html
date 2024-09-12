@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p style="color: red;"  id="xxx">TEST 1</p>
+
+    <p style="color: red;"  id="oop">TEST 2</p>
+
+    <button onclick="show_popup()">show popup</button>
+
+    <button onclick="show_log()">show console</button>
+
+    <script >
+        // document.body.style.backgroundColor="grey"
+
+        // 1. แสดงคำว่า "HELLO" ที่ console
+        console.log("hello")
+
+        // 2. แสดง popup แจ้งเตือนคำว่า "Are you sure?" ที่ browser
+        //alert("Are you sure")
+    
+        // 3. ใส่ค่าให้ tag ตัวอย่าง <p>Nipawan</rffvc7845784111111p> โดยใช้ id ของ tag p ในการอ้างถึง element
+        document.getElementById("xxx").innerHTML="nipawan"
+
+        // 4. เปลี่ยนสี ของ tag p ให้เป็นสี blue โดยใช้ id ของ tag p ในการอ้างถึง element
+        document.getElementById("xxx").style.color="blue"
+
+        // 5. click button แล้วแสดง  popup แจ้งเตือนคำว่า "Are you sure?" ที่ browser
+        function show_popup(){
+            alert("Are you sure?")
+        }
+
+        function show_log(){
+            console.log("hello5555")
+        }
+        
+    </script>
+</body>
+</html>

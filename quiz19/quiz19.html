@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+    <p id="cat"></p>
+    <button onclick="popup()">button</button>
+    <button onclick="reload()">btnreload</button>
+    <input id="dog" type="text"> 
+    <button onclick="show()">save</button>
+
+    <script>
+        console.log("Hello Word");
+         
+        // alert("This is popup");
+            
+        document.getElementById("cat").innerHTML="Hello";
+
+        document.getElementById("cat").style.color="red";
+
+        function popup() {
+            alert("Hello");
+            
+        }
+       
+        function reload() {
+            location.reload();
+        }
+
+        function show() {
+            var x = document.getElementById("dog").value;
+            alert(x);
+        }
+
+
+
+    </script>
+</body>
+</html>
