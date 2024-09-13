@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="text" type="text">
+    <button onclick="show_text()">show text</button>
+    <hr>
+    <input id="plus" type="number">
+    <button onclick="show_plus()">show plus</button>
+    <hr>
+    <input id="num5" type="number">
+    <input id="5num" type="number">
+    <button onclick="show_2input()">show input2</button>
+
+    <script>
+        // 1. แสดงข้อความผ่าน console โดยใช้คำสั่ง console.log
+        console.log("Hello Word")
+
+        // 2. แสดงข้อความผ่าน popup โดยใช้คำสั่ง alert
+        //   alert("Are yor sure")
+
+        // 3. 
+        function show_text() {
+            // get ค่าจาก input โดยใช้ ID 
+            var x = document.getElementById("text").value;
+            // แสดงค่า x ผ่าน console โดยใช้คำสั่ง console.log
+            console.log(x);
+        }
+
+        // 4.
+        function show_plus() {
+            // convert type จาก string เป็น number
+            var x = Number(document.getElementById("plus").value);
+            var y = 100;
+            var z = x + y
+            alert(z);
+        }
+
+        // 5.
+         
+        // 6.1
+        // ตัวแปร x
+        var x = 85
+        // ตัวแปร  y
+        var y = 63
+         // ตัวแปร  z
+        var z = x + y
+
+        console.log(z)
+
+        // 6.2
+        function newplus(x,y){
+            return x*y;
+        }
+        console.log(newplus(100,32));
+    </script>
+</body>
+
+</html>
