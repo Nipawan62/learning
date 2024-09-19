@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grade  Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body {
+            
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+           
+        }
+        th, td {
+            padding: 15px;
+            text-align: center; /* Center text */
+           
+        }
+       
+        
+    
+    </style>
+</head>
+  <body>
+    <div class="container p-5">
+        
+        <table class="table caption-top mt-5 p-5 table-bordered-radius shadow ">
+            <caption><u><h1>Grade  Calculator</h1></u></caption>
+            <thead>
+              <tr >
+                <th scope="col">Letter</th>
+                <th scope="col">Point</th>
+                <th scope="col">Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A</td>
+                <td>4.0</td>
+                <td>80-100</td>
+              </tr>
+              <tr>
+                <td>B+</td>
+                <td>3.5</td>
+                <td>75-79</td>
+              </tr>
+              <tr>
+                <td>B</td>
+                <td>3.0</td>
+                <td>70-74</td>
+              </tr>
+              <tr>
+                <td>C+</td>
+                <td>2.5</td>
+                <td>65-69</td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td>2.0</td>
+                <td>60-64</td>
+              </tr>
+              <tr>
+                <td>D+</td>
+                <td>1.5</td>
+                <td>55-59</td>
+              </tr>
+              <tr>
+                <td>D</td>
+                <td>1.0</td>
+                <td>50-54</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>0.5</td>
+                <td>0-49</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="liveAlertPlaceholder"></div>
+
+          <div class="input-group mb-3 shadow ">
+            <input type="number" onchange="gradecalculator()"  class="form-control" id="Percentage" placeholder="Exam results" >
+            <button onclick="gradecalculator()" class="btn btn-outline-secondary" type="button" >Calculate</button>
+          </div>
+          
+    </div>
+
+    <script>
+        function gradecalculator(){
+            var Percentage = Number(document.getElementById("Percentage").value);
+
+            if(Percentage >=80){
+                custom_alert('A','success')
+            }else if (Percentage >=75&& Percentage <=79){
+                custom_alert('B+','info')
+            }else if (Percentage >=70 && Percentage <=74){
+                custom_alert('B','info')
+            }else if (Percentage >=65 && Percentage <=69){
+                custom_alert('C+','warning')
+            }else if (Percentage >=60 && Percentage <=64){
+                custom_alert('C','warning')
+            }else if (Percentage >=55 && Percentage <=59){
+                custom_alert('D+','warning')
+            }else if (Percentage >=50 && Percentage <=54){
+                custom_alert('D','warning')
+            }else  {
+                custom_alert('F','danger')
+            }
+        }
+
+
+        // custom_alert
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const custom_alert = (message, type) => {
+            const wrapper = document.createElement('div')
+            alertPlaceholder.innerHTML= "";
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+            alertPlaceholder.append(wrapper)
+        }
+        //custom_alert
+
+    </script>
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
